@@ -30,7 +30,7 @@ Ready to join a great team!
 
  ## **Code examples**
 
-.....
+![code example](https://user-images.githubusercontent.com/90932695/197403727-50eff977-70d8-4fd2-84fc-160c270ce480.png)
 
 
 
