@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Marina Yurkevich</title>
+</head>
+
+<body>
+    <header>
+        <div class="top_header">
+            <img class="photo" src="img/photo.jpg" height=430 alt="">
+            <h1 class="person">MARINA YURKEVICH</h1>
+            <h2 class="position">JUNIOR DEVELOPER</h2>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#SKILLS">SKILLS</a></li>
+                    <li><a href="#EDUCATION">EDUCATION</a></li>
+                    <li><a href="#PROJECTS">PROJECTS</a></li>
+                    <li><a href="#CODE_EXAMPLE">CODE EXAMPLE</a></li>
+                    <li><a href="#LANGUAGES">LANGUAGES</a></li>
+                    <li><a href="#CONTACTS">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="ABOUT">
+            <h2>ABOUT</h2>
+            <p>I've gained some experience teaching Computer Science and English. And I really understand the importance
+                of having the ability to self-study, self-management skills and responsibility. I believe the
+                combination of my frontend/backend development skills and effective time-management skills, as well as
+                attention to details and willingness to create value for customers and bring value to the business is
+                the right fit for Junior Developer role. Ready to join a great team!</p>
+        </section>
+        <section id="SKILLS">
+            <h2>SKILLS</h2>
+            <ul>
+                <li>HTML5, CSS, PHP, JavaScript</li>
+                <li>Go (Golang)</li>
+                <li>Git, GitHub</li>
+            </ul>
+        </section>
+        <section id="EDUCATION">
+            <h2>EDUCATION</h2>
+            <ul>
+                <li> Rolling Scopes School, course “JavaScript/Front-end Turkey 2022”, 2022-present</li>
+                <li>Rolling Scopes School, course “Become a gopher with Golang United”, 2022</li>
+                <li>Stepik, course “Go (Golang)” by IgorLutiy, 2022</li>
+                <li>Sololearn, courses “HTML”, “PHP”, “CSS”, 2021</li>
+            </ul>
+        </section>
+        <section id="PROJECTS">
+            <h2>PROJECTS</h2>
+            <table>
+                <tr>
+                    <td>
+                        <p><strong>Currency_Rate_Bot</strong> is a Telegram Bot that provides you with the latest data
+                            on popular exchange rates.<br><strong>Using technologies:</strong> Go (Golang)<br>See the
+                            project on <a href="https://github.com/Marinayurkevich/Currency_Rate_Bot"
+                                target="_blank">GitHub</a></p>
+                    </td>
+                    <td><img class="img_projects" src="img/currency_rate_bot.png" alt="sreenshot currency_rate_bot">
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="CODE_EXAMPLE">
+            <h2>CODE EXAMPLE</h2>
+            <p>The code is written in <b>Golang</b><br>
+                <b>Task:</b> Implement a function that will load users from the database. The function takes two
+                arguments - the number of users and the number of goroutines in which users will concurrently load​. The
+                function returns an array of received users.</p>
+                <pre>
+                    <code>                    
+func getBatch(<var>n</var> int64, <var>pool</var> int64) (<var>res</var> []user) {
+    <var>ch</var> &ratio;&equals; make(<var>chan</var> int, <var>pool</var>)
+    var <var>wg</var> sync.WaitGroup
+    var <var>mx</var> sync.Mutex
+    var <var>i</var> int64
+    for <var>i</var> = 0; <var>i</var>&lt;<var>n</var>; <var>i</var>++ {
+        <var>wg</var>.Add(1)
+        <var>ch</var> &lt;&minus; 0
+        go func(<var>j</var> int64) {
+            OneUser := getOne(<var>j</var>)
+            <var>mx</var>.Lock()
+            <var>res</var> = append(<var>res</var>, OneUser)
+            <var>mx</var>.Unlock()
+            <var>wg</var>.Done()
+            &lt;&minus;<var>ch</var>
+        }(<var>i</var>)
+    }
+    <var>wg</var>.Wait()
+    return <var>res</var>
+}
+</code>                    
+</pre>
+                
+        </section>
+    </main>
+    <aside>
+        <div>
+            <section id="CONTACTS">
+                <h2>CONTACTS</h2>
+                <ul>
+                    <li><strong>E-mail </strong> roxy-lo@inbox.ru</li>
+                    <li><strong>LinkedIn </strong> <a href="https://www.linkedin.com/in/marina-yurkevich-837598220/"
+                            target="_blank">contact me</a></li>
+                    <li><strong>GitHub </strong><a href="https://github.com/Marinayurkevich"
+                            target="_blank">Marinayurkevich</a></li>
+                    <li><strong>Location:</strong> Minsk, Belarus.<br>Open to relocation on a global level</li>
+                </ul>
+            </section>
+            <section id="LANGUAGES">
+                <h2>LANGUAGES</h2>
+                <ul>
+                    <li><b>Russian</b> - native speaker</li>
+                    <li><b>English</b> - upper-intermediate</li>
+                </ul>
+            </section>
+        </div>
+    </aside>
+    <footer>
+        <div class="designed">
+            <p>&#169; 10/2022 <a href="https://github.com/Marinayurkevich" target="_blank"><img src="img/GitHub.svg "
+                        height=20 alt="GitHub logo"></a> Marina Yurkevich. <a href="https://rs.school/turkey/"
+                    target="_blank"><img src="img/rs_school.svg" height=20 alt="school logo"></a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

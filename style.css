@@ -1,0 +1,148 @@
+body {
+    width:1400px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #F0F8FF;
+}
+
+
+.top_header {
+    background-color: #90f;
+    height: 230px;
+}
+
+.photo{
+    margin: 15px 35px 15px 35px;
+    float: left;
+    border-radius: 0px 0px 50px 0px;
+    filter: drop-shadow(5px 9px 2px #90f);
+}
+
+.person {
+    text-align: right;
+    letter-spacing:5px;
+    font-size: 400%;
+    font-family: sans-serif;
+    margin-top: 15px;
+    margin-right: 35px;
+}
+
+.position {
+    text-align: right; 
+    letter-spacing:5px;
+    font-size:200%;
+    font-family: sans-serif;
+    font-weight: bold; 
+    margin-right: 35px;
+    color:antiquewhite;
+}
+
+
+nav {
+display: block;
+float: right;
+width:70%;
+}
+
+nav ul li {
+    display: inline-block;
+    font-weight: bold; 
+    margin-left:10px;
+    margin-right:10px;
+}
+
+nav ul li a {
+    padding: 10px;    
+    display: block;
+}
+
+a {
+    cursor: pointer;
+}
+
+nav ul li a:visited {
+    color: #800080;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav ul li a:hover {
+    color: antiquewhite; /* Цвет ссылки при наведении курсора */  
+    background: #e24486; /* Цвет фона */
+}
+
+aside {
+    display: block;
+    float: left;
+    width: 30%;
+    box-shadow: inset 15px 0 5px -5px #9370DB;
+}
+
+aside h2{
+margin-top: 35px;
+margin-left: 35px;
+}
+
+main {
+    width: 70%;
+    float: right;
+    margin-top: 0;
+    background-color: #edddf0;
+}
+
+.designed {
+    width: 1400px;
+    background-color: #90f;     
+    float: right;
+    height: 60px;
+   }
+
+.designed p{
+    text-align: right;
+}
+
+p {
+    font-family: sans-serif;
+    margin-right: 35px; 
+    line-height: 1.5em;
+    text-align: justify;
+    margin-left: 35px;
+}
+
+
+li{
+    font-family: sans-serif;
+    line-height: 1.5em;
+}
+
+.img_projects{
+height:350px;
+float:right;
+}
+
+td{
+    vertical-align: top;    
+}
+
+table{
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+code {
+    font-family: Consolas,"courier new";
+    font-size: 105%;   
+}
+
+h2 {
+    margin-left:35px;
+}
+
+pre{
+    margin-left: 35px;
+}
