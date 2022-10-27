@@ -79,7 +79,7 @@
                 arguments - the number of users and the number of goroutines in which users will concurrently load. The
                 function returns an array of received users.</p><img src="img/GitHub.svg" height=20 alt="GitHub logo">
                 <pre>
-                    <code>                    
+                    <code>
 func getBatch(<var>n</var> int64, <var>pool</var> int64) (<var>res</var> []user) {
     <var>ch</var> &ratio;&equals; make(<var>chan</var> int, <var>pool</var>)
     var <var>wg</var> sync.WaitGroup
@@ -100,10 +100,12 @@ func getBatch(<var>n</var> int64, <var>pool</var> int64) (<var>res</var> []user)
     <var>wg</var>.Wait()
     return <var>res</var>
 }
-</code>                    
-</pre><img src="img/GitHub.svg" height=20 alt="GitHub logo">                
+</code>
+</pre><img src="img/GitHub.svg" height=20 alt="GitHub logo">
         </section>
+        <img src="img/GitHub.svg" height=20 alt="GitHub logo">
     </main>
+    <img src="img/GitHub.svg" height=20 alt="GitHub logo">
     <aside><img src="img/GitHub.svg" height=20 alt="GitHub logo">
         <div>
             <img src="img/GitHub.svg" height=20 alt="GitHub logo">
