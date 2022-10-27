@@ -1,5 +1,5 @@
 body {
-    max-width:1400px;
+    width:1400px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -23,6 +23,7 @@ body {
 
 .person {
     text-align: right;
+    letter-spacing:5px;
     font-size: 400%;
     font-family: sans-serif;
     margin-top: 15px;
@@ -31,7 +32,8 @@ body {
 
 .position {
     text-align: right; 
-    font-size: 225%;
+    letter-spacing:5px;
+    font-size:200%;
     font-family: sans-serif;
     font-weight: bold; 
     margin-right: 35px;
@@ -42,11 +44,14 @@ body {
 nav {
 display: block;
 float: right;
+width:70%;
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 35px;
+    font-weight: bold; 
+    margin-left:10px;
+    margin-right:10px;
 }
 
 nav ul li a {
@@ -67,7 +72,7 @@ li {
 }
 
 nav ul li a:hover {
-    color: antiquewhite; /* Цвет ссылки при наведении на нее курсора мыши */  
+    color: antiquewhite; /* Цвет ссылки при наведении курсора */  
     background: #e24486; /* Цвет фона */
 }
 
@@ -76,6 +81,10 @@ aside {
     float: left;
     width: 30%;
     box-shadow: inset 15px 0 5px -5px #9370DB;
+}
+aside h2{
+margin-top: 35px;
+margin-left: 35px;
 }
 
 main {
@@ -88,11 +97,31 @@ main {
     width: 1400px;
     background-color: rebeccapurple;     
     float: right;
-    height: 40px;
-    text-align:right;
+    height: 60px;
+   }
+
+.designed p{
+    text-align: right;
 }
 
 p {
-    font-family: sans-serif; 
+    font-family: sans-serif;
+    margin-right: 35px; 
+    line-height: 1.5em;
+    text-align: justify;
 }
 
+
+li{
+    font-family: sans-serif;
+    line-height: 1.5em;
+}
+
+.img_projects{
+height:350px;
+float:right;
+}
+
+td{
+    vertical-align: top;
+   }
