@@ -124,4 +124,9 @@ float:right;
 
 td{
     vertical-align: top;
-   }
+}
+
+code {
+    font-family: Consolas,"courier new";
+    font-size: 105%;   
+}
